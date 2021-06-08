@@ -67,17 +67,15 @@ a {
 .label {
   font-weight: bold;
   font-size: 0.84615385rem;
-  margin: 0.25rem 0 0.25rem 0.5rem;
+  margin: 0;
+  background-color: #e8e8e8;
+  padding: 3px 10px;
+  color: rgba(0,0,0,0.6);
+  display: inline-block;
+  border-radius: 4px;
 }
 
 /* ====== Sidebar ====== */
-
-.personal-info .row{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-}
 
 .sidebar {
   position: relative;
@@ -132,6 +130,12 @@ a {
 .contact-info .row {
   display: flex;
   align-items: center;
+}
+.personal-info .row, .job-info .row {
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  
 }
 .social-links .links a {
   text-decoration: none;
@@ -217,7 +221,18 @@ a {
 }
 
 .education .item {
-  margin: 1.5em 0;
+    display:flex;
+    margin: 1.5em 0;
+    flex-direction:row;
+
+}
+.education .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
 }
 
 .education .item .content {
